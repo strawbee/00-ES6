@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+In for loops where (i = 0, etc.), you use the variable let because i will be reassigned in each iteration of the loop. Variables like totalClicks also cannot be const, because you are adding to the number of clicks and reassigning it constantly. Const is used when you will not reassign/redeclare the variable.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It went well. Yes, template literal notation is simpler than concatenations and there is less room for error. I was always missing a + somewhere in concatenations which broke my code and caused me to spend time looking for where it was broken.
